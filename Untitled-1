@@ -1,7 +1,0 @@
-Goal#1: generate a URL slug for each post
-
-gatsby.md --> gatsby --> /blog/gatsby 
-
-Goal#2: Generate blog post page template Component
-
-Goal #3:  Generate a new page for each post.
