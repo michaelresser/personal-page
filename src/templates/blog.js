@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/page-layout';
 import { graphql } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import Head from '../components/head';
+import Head from '../components/page-head';
 
 export const query = graphql`
   query ($slug: String!) {

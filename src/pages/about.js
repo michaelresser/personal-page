@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/layout';
-import Head from '../components/head';
+import Layout from '../components/page-layout';
+import Head from '../components/page-head';
 
 
 const AboutPage = () => {
