@@ -20,8 +20,6 @@ const BlogPage = () => {
       }   
     `)
 
-
-
     return (
         <div>
             <Layout>

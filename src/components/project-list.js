@@ -1,55 +1,57 @@
 import React from 'react';
-import projectListStyles from '../styles/project-list.module.scss'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image';
-
+import projectListStyles from '../styles/project-list.module.scss'
+import { Link } from 'gatsby'
 
 
 const ProjectList = () => {
-    const data = useStaticQuery(graphql`
-    query{
-        allContentfulProject{
-          edges{
-            node{
-              coverPhoto{
-                file{
-                  url
-                }
-                fixed{
-                    width
-                }
-              }
-              projectTitle
-              quickDescription
-              quickFacts
+
+  const data = useStaticQuery(graphql`
+  query{
+    allContentfulProject{
+      edges{
+        node{
+          title
+          titleImage{
+            file{
+              url
             }
           }
+          slug
+          description
+          stack
+          githubLink
         }
+      }
     }
-    `)
+  }
+  `)
+  
+  return (
 
-
-
-
-    return (
-        <div>
-            {data.allContentfulProject.edges.map((edge) => {
-                return (
-                    <div className={projectListStyles.container}>
-                        <img src={edge.node.coverPhoto.file.url} fixed={edge.node.coverPhoto.fixed} />
-                        <div className={projectListStyles.info}>
-                            <h2>{edge.node.projectTitle}</h2>
-                            <h4>{edge.node.quickDescription}</h4>
-                            <ul className={projectListStyles.list}>
-                                {edge.node.quickFacts.map((fact) => <li key={fact}>{fact}</li>)}
-                            </ul>
-                            <a>GitHub</a>
-                        </div>
-                    </div>
-                )
-            })}
-        </div>
-    )
+    <div>
+      {data.allContentfulProject.edges.map((edge) => {
+        return (
+          <div className={projectListStyles.project}>
+            <Link className={projectListStyles.image} className={'col-md-4 col-lg-6'} to={`projects/${edge.node.slug}`}>
+              <img src={edge.node.titleImage.file.url} alt='project-image' />
+            </Link>
+            <div className={projectListStyles.info}>
+              <h2>{edge.node.title}</h2>
+              <p>{edge.node.description}</p>
+              <ul>
+                {edge.node.stack.map((fact) => <li key={fact}>{fact}</li>)}
+              </ul>
+              <ul className={'section'}>
+                <li><Link to={`projects/${edge.node.slug}`}> View Live Project</Link></li>
+                <li><a href={edge.node.githubLink} target='blank'>GitHub Repo</a></li>
+              </ul>
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  )
 }
 
 export default ProjectList
