@@ -1,12 +1,14 @@
 import React from 'react'
-import Layout from '../components/page-layout'
-import Head from '../components/page-head'
+import Layout from '../components/layout'
+import Head from '../components/head'
 import ProjectsList from '../components/projectsList'
 
 const Projects = () => {
     return (
         <Layout>
             <Head title='Projects'/>     
+            
+            
             <ProjectsList />
         </Layout>
     )

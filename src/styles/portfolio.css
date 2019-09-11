@@ -1,0 +1,278 @@
+/* BOOTSTRAP OVERRIDES */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+
+/* PAGE SPECIFIC CLASSES */
+.section {
+  min-height: 80vh;
+}
+.text-box {
+  font-size: 2rem;
+  color: white;
+}
+.content {
+  height: 100vh;
+}
+.quote-box {
+  margin: 2rem 0;
+  border: 1px solid black;
+  text-align: right;
+}
+/* HOME SECTION */
+#home {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1534854890710-ba83ceccf066?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1408&q=80https://images.unsplash.com/photo-1534854890710-ba83ceccf066?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1408&q=80")
+    center/cover fixed;
+  color: white;
+}
+#home-title {
+  text-align: center;
+  font-size: 5rem;
+}
+#home .button-box {
+  height: 20vh;
+}
+#home-arrow {
+  color: white;
+  text-decoration: none;
+}
+
+/* MAIN NAV */
+#main-nav {
+  width: 100vw;
+  height: 5rem;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+}
+#main-nav #logo {
+  padding: 1rem 2rem;
+}
+#main-nav #nav-items {
+  margin: auto;
+}
+#main-nav a {
+  color: inherit;
+  padding: 1rem;
+  font-size: 2rem;
+}
+#main-nav a:hover {
+  background-color: salmon;
+  text-decoration: none;
+}
+#main-nav .toggle {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+}
+
+#main-nav .fas {
+  color: white;
+}
+
+/* Intro Section */
+#intro {
+  position: relative;
+  top: -5rem;
+  padding: 10vh 1rem 5rem 1rem;
+  min-height: 100vh;
+  height: auto;
+}
+
+#intro-image {
+  height: 80vh;
+  background: url("../images/IMG_20160806_135528.jpg") center left/cover;
+}
+#intro-text {
+  height: 80vh;
+  padding: 1rem 2rem;
+  background: #fafafa;
+  box-shadow: 0 0 5px #fafafa;
+}
+
+/* About Me Page */
+#about {
+  min-height: 100vh;
+  height: auto;
+}
+#about .content {
+  min-height: 70vh;
+  height: auto;
+  padding: 1rem auto;
+}
+.page-break {
+  padding: 2rem auto;
+  min-height: 25vh;
+  background: black;
+  color: tan;
+}
+#reviews {
+  padding: 3rem auto;
+  min-height: 100px;
+  height: auto;
+  background: tan;
+  color: white;
+}
+
+#attributes {
+  background: linear-gradient(left to right, #fafafa, white);
+}
+#attributes .icon {
+  color: #207276;
+}
+.skills {
+  margin: 0;
+  padding: 0;
+}
+.skills li:first {
+  transform: stretch(10px);
+}
+.skill-badge {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-content: center;
+  padding: 1rem;
+  background-color: salmon;
+  border: 1px solid white;
+  text-align: center;
+  transform: skew(-20deg);
+}
+.skill-badge .fab {
+  transform: skew(20deg);
+  color: white;
+}
+
+/*PROJECTS */
+#projects {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5rem;
+}
+#projects > .gallery {
+  margin: 0;
+  padding: 0;
+  height: 80vh;
+}
+.project-wrap {
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.project-box {
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(to bottom right, #23b7bc, #23b7bc);  */
+
+  opacity: 100;
+  transition: opacity 0.5s ease;
+}
+.project-text {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.project-text > h1,
+p {
+  margin: 0;
+}
+.project-wrap > button {
+  z-index: 2;
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.project-wrap:hover > .project-box {
+  opacity: 0;
+}
+.project-wrap:hover > .project-text {
+  opacity: 100;
+  top: 25%;
+}
+.project-wrap:hover > button {
+  opacity: 100;
+  bottom: 25%;
+}
+
+/* CONTACT*/
+#contact {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5rem;
+  background: linear-gradient(to bottom, white, #23373b);
+}
+#contact .title-box h1 {
+  margin-top: 2rem;
+  color: #ffcc00;
+}
+#contact-form {
+  background: salmon;
+}
+.contact-icons a {
+  margin: 0 1rem;
+}
+.contact-icons .fab {
+  color: white;
+  transition: all 0.75sec ease-in-out;
+}
+.contact-icons .fab:hover {
+  transform: scale(1.25, 1.25);
+  text-shadow: 0 0 1rem #fafafa;
+}
+#contact-form input {
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+#contact-form textarea {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+#contact-button {
+  width: 300px;
+  transition: all 1s ease;
+}
+#contact-button:hover {
+  box-shadow: 0 0 0.25rem 0.25rem #fafafa;
+  transform: scale(1.1, 1.1);
+}
+
+/* FOOTER */
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background: none;
+  color: #999999;
+}
+#footer strong {
+  color: #ffcc00;
+}

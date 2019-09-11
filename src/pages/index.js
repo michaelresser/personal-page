@@ -1,16 +1,16 @@
 import React from 'react';
-import Layout from '../components/page-layout'
-import Head from '../components/page-head';
+import Layout from '../components/layout';
+import Intro from '../components/intro';
 import Home from '../components/home';
-import About from '../components/about';
 
 const IndexPage = () => {
     return (
-        <Layout>
-            <Head title="Home"/>
+        <div>
             <Home />
-            <About />
-        </Layout>
+            <Layout>
+                <Intro />
+            </Layout>
+        </div>
     )
 }
 
