@@ -27,7 +27,7 @@ const ProjectsList = () => {
   `)
 
   return (
-    // <!--PROJECTS SECTION-->
+      /* <!--PROJECTS SECTION--> */ 
     <div id='projects' className='d-flex flex-column'>
         <div className='row justify-content-center'>
             <ul id='projects-menu' className='d-inline-flex'>
@@ -44,12 +44,11 @@ const ProjectsList = () => {
             <li className='skill-badge'><i className='fab fa-react fa-4x'></i></li>
             <li className='skill-badge'><i className='fab fa-bootstrap fa-4x'></i></li>
             <li className='skill-badge'><i className='fab fa-git-square fa-4x'></i></li>
-        </ul> -->
+        </ul>
         {/* <!--  PROJECT GALLERY--> */}
         <div className='gallery row w-75 mx-auto'>
             <div className='project-wrap col-lg-4 p-0'>
-                <div className='project-box' style='background: url("https://images.unsplash.com/photo-1529630218527-7df22fc2d4ee?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
-                center/cover;'></div>
+                <div className='project-box'></div>
                 <div className='project-text'>
                     <h1>Text</h1>
                     <p>Subtext</p>
@@ -57,8 +56,7 @@ const ProjectsList = () => {
                 <button>Button</button>
             </div>
             <div className='project-wrap col-lg-4 p-0'>
-                <div className='project-box' style='background: url("https://images.unsplash.com/photo-1529630218527-7df22fc2d4ee?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
-                center/cover;'></div>
+                <div className='project-box'></div>
                 <div className='project-text'>
                     <h1>Text</h1>
                     <p>Subtext</p>
@@ -66,17 +64,7 @@ const ProjectsList = () => {
                 <button>Button</button>
             </div>
             <div className='project-wrap col-lg-4 p-0'>
-                <div className='project-box' style='background: url("https://images.unsplash.com/photo-1529630218527-7df22fc2d4ee?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
-                center/cover;'></div>
-                <div className='project-text'>
-                    <h1>Text</h1>
-                    <p>Subtext</p>
-                </div>
-                <button>Button</button>
-            </div>Name
-            <div className='project-wrap col-lg-4 p-0'>
-                <div className='project-box' style='background: url("https://images.unsplash.com/photo-1529630218527-7df22fc2d4ee?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
-                center/cover;'></div>
+                <div className='project-box'></div>
                 <div className='project-text'>
                     <h1>Text</h1>
                     <p>Subtext</p>
@@ -84,8 +72,15 @@ const ProjectsList = () => {
                 <button>Button</button>
             </div>
             <div className='project-wrap col-lg-4 p-0'>
-                <div className='project-box' style='background: url("https://images.unsplash.com/photo-1529630218527-7df22fc2d4ee?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
-                center/cover;'></div>
+                <div className='project-box'></div>
+                <div className='project-text'>
+                    <h1>Text</h1>
+                    <p>Subtext</p>
+                </div>
+                <button>Button</button>
+            </div>
+            <div className='project-wrap col-lg-4 p-0'>
+                <div className='project-box'></div>
                 <div className=' project-text'>
                     <h1>Text</h1>
                     <p>Subtext</p>
@@ -93,8 +88,7 @@ const ProjectsList = () => {
                 <button>Button</button>
             </div>
             <div className='project-wrap col-lg-4 p-0'>
-                <div className='project-box' style='background: url("https://images.unsplash.com/photo-1529630218527-7df22fc2d4ee?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
-                center/cover;'></div>
+                <div className='project-box'></div>
                 <div className=' project-text'>
                     <h1>Text</h1>
                     <p>Subtext</p>

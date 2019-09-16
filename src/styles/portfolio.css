@@ -1,3 +1,8 @@
+@font-face {
+  font-family: FuturaCondensedExtraBold;
+  src: url(../fonts/FuturaCondensedExtraBold.otf);
+}
+
 /* BOOTSTRAP OVERRIDES */
 html {
   box-sizing: border-box;
@@ -37,6 +42,7 @@ li {
 }
 #home-title {
   text-align: center;
+  font-family: FuturaCondensedExtraBold;
   font-size: 5rem;
 }
 #home .button-box {
@@ -83,10 +89,10 @@ li {
 /* Intro Section */
 #intro {
   position: relative;
-  top: -5rem;
-  padding: 10vh 1rem 5rem 1rem;
+  margin-top: 5rem;
+  padding: 1rem;
   min-height: 100vh;
-  height: auto;
+  
 }
 
 #intro-image {
@@ -95,9 +101,9 @@ li {
 }
 #intro-text {
   height: 80vh;
+  font-size: 2rem;
   padding: 1rem 2rem;
-  background: #fafafa;
-  box-shadow: 0 0 5px #fafafa;
+  
 }
 
 /* About Me Page */
@@ -178,7 +184,8 @@ li {
   width: 100%;
   height: 100%;
   /* background: linear-gradient(to bottom right, #23b7bc, #23b7bc);  */
-
+  background: url("https://images.unsplash.com/photo-1529630218527-7df22fc2d4ee?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ")
+  center/cover;
   opacity: 100;
   transition: opacity 0.5s ease;
 }

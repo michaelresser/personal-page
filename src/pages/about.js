@@ -4,7 +4,11 @@ const About = () => {
     return (
         <div id='top'>
             <Layout>
-                <About />
+                <div className='container-fluid'>
+                    <div className='row justify-content-center align-content-center'>
+                        <p>Detailed about Section will go here</p>
+                        </div>
+                </div>
             </Layout>
         </div>
     )

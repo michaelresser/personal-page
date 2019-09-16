@@ -8,11 +8,11 @@ const Header = () => {
       <a id="logo" href='#home'>
         <i class="fas fa-mountain fa-1x"></i>
       </a>
-      <div id="nav-items" className="d-flex flex-row justify-content-center">
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/articles">Articles</a>
-        <a href="/contact">Contact</a>
+      <div id="nav-items" className="d-flex flex-row justify-content-start">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#articles">Articles</a>
+        <a href="#contact">Contact</a>
       </div>
       <a id='main-nav-toggle' className='toggle'>
         <i className="fas fa-bars fa-1x"></i>
